@@ -1,3 +1,3 @@
 Elections.Router.map(function () {
-  this.route('pokus');
+  this.route('pokus', {'path' : '/'});
 });
