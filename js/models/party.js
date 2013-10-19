@@ -7,6 +7,6 @@ Elections.Party = DS.Model.extend({
     votesSumPercent: attr(), //0.0026	Celkový počet procent získaných na celostátní úrovni. Zapsaný jako desetinné číslo (54.3% = 0.543)
 
     fullName: function() {
-        return this.get('votestSumPercent') >= 0.05;
-    }.property('votestSumPercent')
+        return this.get('votesSumPercent') >= 0.05;
+    }.property('votesSumPercent')
 });
