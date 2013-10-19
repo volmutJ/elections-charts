@@ -10,4 +10,4 @@ Elections = Ember.Application.create({
 });
 
 require('js/router');
-//require('js/models/*');
+require('js/models/*');
