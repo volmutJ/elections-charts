@@ -1,0 +1,1 @@
+Elections = Ember.Application.create();
