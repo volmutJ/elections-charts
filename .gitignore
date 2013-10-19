@@ -1,4 +1,5 @@
 build
 dependencies/compiled
+node_modules
 
 .idea
