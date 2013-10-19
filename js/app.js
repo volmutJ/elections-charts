@@ -9,5 +9,7 @@ Elections = Ember.Application.create({
     LOG_VIEW_LOOKUPS: true
 });
 
+Elections.ApplicationAdapter = DS.FixtureAdapter.extend();
+
 require('js/router');
 require('js/models/*');
