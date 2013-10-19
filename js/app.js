@@ -9,7 +9,10 @@ Elections = Ember.Application.create({
     LOG_VIEW_LOOKUPS: true
 });
 
-Elections.ApplicationAdapter = DS.FixtureAdapter.extend();
+Elections.ApplicationAdapter = DS.RESTAdapter.extend({
+  host: 'http://elections.apiary.io'
+});
+//Elections.ApplicationAdapter = DS.FixtureAdapter.extend();
 
 require('js/router');
 require('js/models/*');
