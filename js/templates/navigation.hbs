@@ -1,0 +1,29 @@
+<header>
+    <div class="container">
+        <nav class="navbar navbar-default" role="navigation">
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Výsledky voleb</a>
+            </div>
+
+
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+
+                <ul class="nav navbar-nav">
+                    <li>{{#link-to 'parties'}}Celá ČR{{/link-to}}</li>
+                    <li>{{#link-to 'regions'}}Kraje{{/link-to}}</li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>{{#link-to 'about'}}O aplikaci{{/link-to}}</li>
+                </ul>
+
+            </div>
+        </nav>
+    </div>
+</header>

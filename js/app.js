@@ -9,7 +9,9 @@ require('dependencies/compiled/templates');
 Elections = Ember.Application.create({
     LOG_TRANSITIONS: true,
     LOG_BINDINGS: true,
-    LOG_VIEW_LOOKUPS: true
+    LOG_VIEW_LOOKUPS: true,
+
+    rootElement: '#ember-app'
 });
 
 Elections.ApplicationAdapter = DS.RESTAdapter.extend({
@@ -20,3 +22,4 @@ Elections.ApplicationAdapter = DS.RESTAdapter.extend({
 require('js/router');
 require('js/models/*');
 require('js/controllers/*');
+require('js/views/*');
