@@ -10,6 +10,10 @@ Elections.Party = DS.Model.extend({
         return this.get('votes_sum_percent') >= 0.05;
     }.property('votes_sum_percent'),
 
+    isInteresting: function() {
+        return this.get('votes_sum_percent') >= 0.01;
+    }.property('votes_sum_percent'),
+
     idAndNameForGoogleChart: function() {
         return [this.get('name'), this.get('votes_sum_percent')];
     }.property('name', 'votes_sum_percent')
