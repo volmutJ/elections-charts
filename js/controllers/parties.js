@@ -3,7 +3,8 @@ Elections.PartiesController = Ember.ArrayController.extend({
     partiesForChart: function() {
 
         return this.content.map(function(party) {
-            return party.get('idAndNameForGoogleChart');
+            var result = party.get('idAndNameForGoogleChart');
+            return result;
         });
 
     }.property('@each')
@@ -15,6 +16,7 @@ Elections.PartiesView = Ember.View.extend({
     didInsertElement: function() {
 
         var parties = this.controller.get('partiesForChart');
+        console.log(parties)
         var data = google.visualization.arrayToDataTable(
             parties
         );

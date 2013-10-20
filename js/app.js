@@ -15,7 +15,7 @@ Elections = Ember.Application.create({
 Elections.ApplicationAdapter = DS.RESTAdapter.extend({
   host: 'http://elections.apiary.io'
 });
-//Elections.ApplicationAdapter = DS.FixtureAdapter.extend();
+// Elections.ApplicationAdapter = DS.FixtureAdapter.extend();
 
 require('js/router');
 require('js/models/*');

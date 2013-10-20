@@ -15,7 +15,7 @@ Elections.Party = DS.Model.extend({
     }.property('name', 'votes_sum_percent')
 
 });
-/*
+
 Elections.Party.FIXTURES = [
   {
     "id": 1,
@@ -200,4 +200,3 @@ Elections.Party.FIXTURES = [
     "votes_sum_percent": 0.0023
   }
 ]
-*/
