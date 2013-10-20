@@ -1,0 +1,40 @@
+<style>
+    .overlay {
+        position:absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        background: rgba(0, 0, 0, 0.85);
+        z-index:9999;
+    }
+    .txt {
+        display: inline-block;
+        vertical-align: middle;
+        position:relative;
+        width: 100%;
+        padding-top: 200px;
+    }
+    .inner {
+        padding: 15px;
+        border: 1px solid black;
+        box-shadow: 0 0 30px grey;
+        background-color: #eeeeee;
+        display: inline-block;
+
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+    }
+
+</style>
+<div class="overlay">
+
+    <div class="txt text-center">
+        <div class="inner">
+            <span class="glyphicon glyphicon-cloud-download"></span>
+            <p>Prosím počkejte, načítám data...</p>
+        </div>
+    </div>
+
+</div>
